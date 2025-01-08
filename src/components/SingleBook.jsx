@@ -23,7 +23,9 @@ function SingleBook() {
   useEffect(() => {
     async function fetch() {
       try {
-        const data = await import(`./../assets/book/${currentBook.coverImage}`);
+        const data = await import(
+          `./../assets/book/${currentBook.coverImage}.png`
+        );
         setImage(data.default);
       } catch (error) {
         console.log(error);

@@ -16,7 +16,7 @@ function CartCard({ item }) {
   useEffect(() => {
     async function fetch() {
       try {
-        const data = await import(`../assets/book/${item.coverImage}`);
+        const data = await import(`../assets/book/${item.coverImage}.png`);
         setImage(data.default);
       } catch (error) {
         console.log(error);

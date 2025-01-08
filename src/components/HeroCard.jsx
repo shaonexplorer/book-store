@@ -6,7 +6,7 @@ function HeroCard({ book }) {
   useEffect(() => {
     async function fetch() {
       try {
-        const data = await import(`./../assets/hero/${book.coverImage}`);
+        const data = await import(`./../assets/hero/${book.coverImage}.png`);
         setImage(data.default);
       } catch (error) {
         console.log(error);
